@@ -7,5 +7,6 @@ import '../model/model.dart';
 Future<User>fetchData() async{
   var responce = await http.get(Uri.parse('https://jsonplaceholder.typicode.com/posts'));
 var user= jsonDecode(responce.body);
+print(user);
   return User.fromJson(user);
 }

@@ -75,25 +75,26 @@ class _MyHomePageState extends State<MyHomePage> {
 builder: (context,snapshot){
   if(snapshot.hasData)
   {
-    List<dynamic> data = snapshot.data as List;
-    return ListView.builder(
-  itemCount: data.length,
-  itemBuilder: (context,index){
-  var item = data[index];
-  var userid = item['userId'];
-  var id = item['id'];
-  var title = item['title'];
-  var body = item['body'].toString();
-
-  return ListTile(
-  title: Text(title),
-  leading: Text(id),
-  subtitle: Text(body),
-  );
-  },
-  prototypeItem: Divider(),
-
-  );
+    return Text('');
+  //   List<dynamic> data = snapshot.data as List;
+  //   return ListView.builder(
+  // itemCount: data.length,
+  // itemBuilder: (context,index){
+  // var item = data[index];
+  // var userid = item['userId'];
+  // var id = item['id'];
+  // var title = item['title'];
+  // var body = item['body'].toString();
+  //
+  // return ListTile(
+  // title: Text(title),
+  // leading: Text(id),
+  // subtitle: Text(body),
+  // );
+  // },
+  // prototypeItem: Divider(),
+  //
+  // );
 
 
 
